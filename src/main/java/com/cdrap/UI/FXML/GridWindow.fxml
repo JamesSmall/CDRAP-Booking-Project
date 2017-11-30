@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cdrap.UI.Controller.GridWindow"> 
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#onNewDocument" text="New Document" />
+                  <MenuItem mnemonicParsing="false" text="New From Template" />
+            <MenuItem mnemonicParsing="false" text="Open Document (local)" />
+            <MenuItem mnemonicParsing="false" text="Open (google drive)" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Save to Local" />
+            <MenuItem mnemonicParsing="false" text="Save As" />
+            <MenuItem mnemonicParsing="false" text="Save to Google Doc" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit (close app)" />
+          </items>
+        </Menu>
+            <Menu fx:id="Navigation" mnemonicParsing="false" text="Navigation">
+               <items>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#onSearchByClass" text="Search by Class" />
+                  <MenuItem mnemonicParsing="false" onAction="#onSearchByTime" text="Search by Time" />
+               </items>
+            </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem mnemonicParsing="false" text="About google doc" />
+                  <MenuItem mnemonicParsing="false" text="Credit" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <HBox fx:id="HeaderText" prefHeight="19.0" prefWidth="616.0">
+         <children>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="58.0" prefWidth="100000.0" text="Test Button" />
+         </children>
+      </HBox>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="375.0" prefWidth="587.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <TableView fx:id="TableViewer" layoutY="3.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" />
+               </padding>
+            </TableView>
+      </children>
+    </AnchorPane>
+      <HBox fx:id="ButtonsContainers" prefHeight="19.0" prefWidth="616.0">
+         <children>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="58.0" prefWidth="100000.0" text="Test Button" />
+         </children>
+      </HBox>
+  </children>
+</VBox>

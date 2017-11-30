@@ -1,0 +1,5 @@
+https://developers.google.com/identity/protocols/OAuth2
+	<-you will need a gmail account, and than you will need to create an authentication file for this application
+	The file must be named 'client_id.json'
+	Please name the app "BookingApp" inside google console //that is the internal name of the application
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="back" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" prefHeight="54.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cdrap.UI.Controller.Popup.RoomRemoveController">
+   <children>
+      <VBox layoutX="7.0" layoutY="145.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="56.0" prefWidth="330.0" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="28.0" prefWidth="324.0">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="50.0" text="Room" />
+                  <ComboBox fx:id="room" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="24.0" prefWidth="275.0" />
+               </children>
+            </HBox>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="6.0" prefWidth="330.0">
+               <children>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCancel" prefHeight="25.0" prefWidth="162.0" text="Cancel" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSearch" prefHeight="25.0" prefWidth="162.0" text="Remove" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
