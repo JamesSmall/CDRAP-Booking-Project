@@ -12,3 +12,5 @@ the application will require credientials in order to run at all!
 Using google docs https://developers.google.com/identity/protocols/OAuth2 <-you will need a gmail account, and than you will need to create an authentication file for this application The file must be named 'client_id.json' and placed into the resources directory inside eclipse (or other gradle using compiler) Please name the app "BookingApp" inside google console //that is the internal name of the application
 
 place the credentials with the name 'client_id.json' into the resource directoy, the application WILL NOT run without it.
+
+to import, download as zip, extract the file, than use import in eclipse and and import as IDE (other platforms that support gradle) and import gradle
