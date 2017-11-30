@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="JavaCapstoneGradleWrapper">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Project and External Dependencies.libraryclasspath">
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.21/139535a69a4239db087de9bab0bee568bf8e0b70/slf4j-api-1.7.21.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client/1.22.0/244350c0c845c583717ade13f5666a452fd0cfa/google-api-client-1.22.0.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client-jetty/1.22.0/b94c1e7d6c73cb1c15e2e5569cc6fda08cc80099/google-oauth-client-jetty-1.22.0.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-sheets/v4-rev483-1.22.0/57a1b30a0675bd8847189590679cde815b686311/google-api-services-sheets-v4-rev483-1.22.0.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-drive/v3-rev81-1.22.0/441970c6b3bcb137a4dcbdc0a610438b13a516b5/google-api-services-drive-v3-rev81-1.22.0.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client/1.22.0/1d63f369ac78e4838a3197147012026e791008cb/google-oauth-client-1.22.0.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-jackson2/1.22.0/cc014d64ae11117e159d334c99d9c246d9b36f44/google-http-client-jackson2-1.22.0.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/com.google.guava/guava-jdk5/17.0/463f8378feba44df7ba7cd9272d01837dad62b36/guava-jdk5-17.0.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client-java6/1.22.0/6cbd19cd33d55bcaac2d842a57f5ade9260bed99/google-oauth-client-java6-1.22.0.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty/6.1.26/2f546e289fddd5b1fab1d4199fbb6e9ef43ee4b0/jetty-6.1.26.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client/1.22.0/d441fc58329c4a4c067acec04ac361627f66ecc8/google-http-client-1.22.0.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.1.3/f6c3aed1cdfa21b5c1737c915186ea93a95a58bd/jackson-core-2.1.3.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty-util/6.1.26/e5642fe0399814e1687d55a3862aa5a3417226a9/jetty-util-6.1.26.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/servlet-api/2.5-20081211/22bff70037e1e6fa7e6413149489552ee2064702/servlet-api-2.5-20081211.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.0.1/1d7d28fa738bdbfe4fbd895d9486308999bdf440/httpclient-4.0.1.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.0.1/e813b8722c387b22e1adccf7914729db09bcb4a9/httpcore-4.0.1.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar"/>
+        <pathelement location="../../../.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.3/fd32786786e2adb664d5ecc965da47629dca14ba/commons-codec-1.3.jar"/>
+    </path>
+    <path id="JavaCapstoneGradleWrapper.classpath">
+        <pathelement location="bin"/>
+        <path refid="Project and External Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src/main/resources">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/main/java"/>
+            <src path="src/main/resources"/>
+            <src path="src/test/java"/>
+            <classpath refid="JavaCapstoneGradleWrapper.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="FXHandler">
+        <java classname="com.cdarp.UI.FXHandler" failonerror="true" fork="yes">
+            <classpath refid="JavaCapstoneGradleWrapper.classpath"/>
+        </java>
+    </target>
+    <target name="QuickStart2">
+        <java classname="com.cdrap.googledrive.QuickStart2" failonerror="true" fork="yes">
+            <classpath refid="JavaCapstoneGradleWrapper.classpath"/>
+        </java>
+    </target>
+    <target name="FXHandler (1)">
+        <java classname="com.cdrap.UI.FXHandler" failonerror="true" fork="yes">
+            <classpath refid="JavaCapstoneGradleWrapper.classpath"/>
+        </java>
+    </target>
+</project>
